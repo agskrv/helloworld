@@ -25,10 +25,10 @@ module.exports = function settings(prm) {
 
     // расположение couchdb для сайта (редирект настроен в nginx)
     // если couchdb выполняется на том же сервере, что и nginx, можно указать "//localhost:5984/",
-    couch_path: "/couchdb/" + lsprefix,
+    couch_path: "/http://localhost:5984/" + lsprefix,
 
     // расположение couchdb для nodejs (компиляция метаданных)
-    couch_local: "http://cou200:5984/" + lsprefix,
+    couch_local: "http://localhost:5984/" + lsprefix,
 
     // если указать режим couch_direct здесь (не важно, true или false),
     // будет использовано это значение, а не константа из localStorage
@@ -40,10 +40,10 @@ module.exports = function settings(prm) {
     },
 
     // по умолчанию, обращаемся к зоне 1
-    zone: 1,
+    zone: 0,
 
     // объявляем номер демо-зоны
-    zone_demo: 1,
+    zone_demo: 0,
 
     // если use_meta === false, не используем базу meta в рантайме
     // см.: https://github.com/oknosoft/metadata.js/issues/255

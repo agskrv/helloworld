@@ -23,6 +23,30 @@ const items = [
         need_user: true,
         //icon: <IconDrafts/>,
       },
+      {
+        text: 'Акт сдачи приема древесины',
+        id: 'doc_act_wood',
+        navigate: '/doc.act_wood/list',
+        need_meta: true,
+        need_user: true,
+        //icon: <IconDrafts/>,
+      },
+    ]
+  },
+    {
+    text: 'Справочники',
+    icon: <IconDoc/>,
+    open: true,
+    id: 'rams',
+    items: [
+      {
+        text: 'Пункты приема отгрузки',
+        id: 'cat_punkt',
+        navigate: '/cat.punkt/list',
+        need_meta: true,
+        need_user: true,
+        //icon: <IconDrafts/>,
+      },
     ]
   },
   {

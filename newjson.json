@@ -129,6 +129,30 @@
 						"caption": "№"
 					},
 					{
+						"id": "sender",
+						"width": "180",
+						"type": "ro",
+						"align": "left",
+						"sort": "na",
+						"caption": "Оправитель"
+					},
+					{
+						"id": "recipient",
+						"width": "180",
+						"type": "ro",
+						"align": "left",
+						"sort": "na",
+						"caption": "Получатель"
+					},
+					{
+						"id": "doc_amount",
+						"width": "120",
+						"type": "ron",
+						"align": "right",
+						"sort": "na",
+						"caption": "Сумма"
+					},
+					{
 						"id": "note",
 						"width": "*",
 						"type": "ro",
@@ -139,6 +163,7 @@
 				}
 			}
 		},
+            
 		"act_wood": {
 			"form": {
 				"selection": {
@@ -176,7 +201,9 @@
 					}]
 				}
 			}
-		},
+		
+            },
+            
 		"report_wood": {
 			"form": {
 				"selection": {
@@ -214,8 +241,9 @@
 					}]
 				}
 			}
-		}
-	}],
+                }
+            
+        }],
 	"ireg": {
 		
 	},
